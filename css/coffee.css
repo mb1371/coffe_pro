@@ -1,0 +1,473 @@
+/* Start Variables */
+:root{
+  --main-color:#d3ad7f;
+  --black:#13131a;
+  --bg:#010103;
+  --border:.1rem solid rgba(255,255,255,.3);
+  --title-size: 2.5rem;
+  --main-padding: 2rem 7%;
+}
+/* End Variables */
+/* Start Gobal Rules */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+  /* End Global Rules */
+/* Start style Of Page */
+.parent{
+  background-color: var(--bg);
+}
+/* End style Of Page */
+/* Start Style Of header */
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 7%;
+  background-color: var(--bg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  border-bottom: var(--border);
+  width: 100%;
+  height: 100px;
+}
+.header .logo img{
+  height: 3.75rem;
+}
+.header ul{
+  padding: 0;
+  margin: 0;
+}
+.header ul li{
+  display: inline-block;
+}
+.header ul li a{
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+.header ul li a:hover{
+  color: var(--main-color);
+  border-bottom: var(--border);
+}
+.header .icons a{
+  color: #fff;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.header .icons a:hover{
+  color: var(--main-color);
+}
+/* End Style Of header */
+/* Start Style Of Home */
+.home{
+  min-height: 100vh;
+  background: url(../images/home-img.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.home .content{
+  max-width: 60rem;
+  padding: 0px 7%;
+}
+.home .content h3{
+  font-size: 4.5rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.home .content p{
+    font-size: 1.3rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #eee;
+}
+.home .content .btn{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  background: var(--main-color);
+  min-width: 300px;
+  outline: 0;
+  border: 0;
+  padding: .75rem 1.5rem;
+  transition: letter-spacing .2s ease-in;
+  -webkit-transition: letter-spacing .2s ease-in;
+  -moz-transition: letter-spacing .2s ease-in;
+  -ms-transition: letter-spacing .2s ease-in;
+  -o-transition: letter-spacing .2s ease-in;
+}
+.home .content .btn:hover{
+  letter-spacing: 2px;
+}
+/* End Style Of Home */
+/* Start Stayle of Fremwork */
+.heading{
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: var(--title-size);
+  padding-bottom: .1rem;
+}
+.heading span{
+  color: var(--main-color);
+  text-transform: uppercase;
+  margin-left: 15px;
+}
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+}
+.box-container .box {
+  padding: 3rem;
+  text-align: center;
+  border: var(--border);
+}
+.stars{
+  padding: .75rem;
+}
+.stars i{
+  font-size: 1rem;
+  color: var(--main-color);
+}
+/* End Stayle of Fremwork */
+/* Start Style Of About */
+.about{
+  padding: 2rem 7%;
+}
+.about .heading span{
+  margin-right: 15px;
+}
+.about .row{
+  display: flex;
+  align-items: center;
+  background: var(--black);
+}
+.about .row .image{
+  flex: 1 1 45rem;
+}
+.about .row .image img{
+  width: 578.31px;
+  height: 402.48px;
+}
+.about .row .content{
+  padding: 2rem;
+}
+.about .row .content h3{
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about .row .content p{
+  color: #fff;
+  text-transform: capitalize;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+.about .row .content .btn{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  background: var(--main-color);
+  min-width: 300px;
+  outline: 0;
+  border: 0;
+  padding: .75rem 1.5rem;
+  transition: letter-spacing .2s ease-in;
+  -webkit-transition: letter-spacing .2s ease-in;
+  -moz-transition: letter-spacing .2s ease-in;
+  -ms-transition: letter-spacing .2s ease-in;
+  -o-transition: letter-spacing .2s ease-in;
+}
+.about .row .content .btn:hover{
+  letter-spacing: 2px;
+}
+/* End Style Of About */
+/* Start Style Of Menu */
+.menu{
+  padding: var(--main-padding);
+}
+.menu .box-container .box {
+  padding: 3rem;
+  transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -ms-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+}
+.menu .box-container .box:hover {
+  background-color: #fff;
+}
+.menu .box-container .box:hover > h3{
+  color: var(--black);
+}
+.menu .box-container .box:hover > .price{
+  color: var(--black);
+}
+.menu .box-container .box:hover > .btn{
+  color: var(--black);
+}
+.menu .box-container .box img {
+  height: 6rem;
+}
+.menu .box-container .box h3 {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+.menu .box-container .box .price {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: .5rem 0;
+  margin-bottom: 1rem;
+}
+.menu .box-container .box .price span {
+  font-size: 1rem;
+  text-decoration: line-through;
+  font-weight: lighter;
+}
+.menu .box-container .box .btn {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  background: var(--main-color);
+  min-width: 300px;
+  outline: 0;
+  border: 0;
+  padding: .75rem 1.5rem;
+  transition: letter-spacing .2s ease-in;
+  -webkit-transition: letter-spacing .2s ease-in;
+  -moz-transition: letter-spacing .2s ease-in;
+  -ms-transition: letter-spacing .2s ease-in;
+  -o-transition: letter-spacing .2s ease-in;
+}
+.menu .box-container .box .btn:hover {
+  letter-spacing: 2px;
+}
+/* End Style Of Menu */
+/* Start Style Of Proudacts */
+.product{
+  padding: var(--main-padding);
+}
+.product .box-container .box .icons a {
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  font-size: 1.3rem;
+  border: var(--border);
+  color: #fff;
+  margin: .3rem;
+  text-decoration: none;
+  transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -ms-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+}
+.product .box-container .box .icons a:hover{
+  background-color: var(--main-color);
+}
+.product .box-container .box .image{
+  padding: 1.5rem 0;
+}
+.product .box-container .box .image img {
+  height: 16rem;
+}
+.product .box-container .box .content h3{
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+.product .box-container .box .content .price{
+  color: #fff;
+  font-size: 1.5rem;
+}
+.product .box-container .box .content .price span{
+  text-decoration: line-through;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+/* End Style Of Proudacts */
+/* Strat Style Of Review */
+.review{
+  padding: var(--main-padding);
+}
+.review .box-container .box{
+  padding: 2rem;
+}
+.review .box-container .box p{
+  font-size: 1rem;
+  line-height: 1.8rem;
+  Color: #fff;
+  padding: 2rem 0;
+}
+.review .box-container .box .user{
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  object-fit: cover;
+}
+.review .box-container .box h3{
+  color: #fff;
+  font-size: 1.5rem;
+  padding-top: .5rem;
+  text-transform: capitalize;
+}
+/* End Style Of Review */
+/* Start Style Of Blogs */
+.blogs{
+  padding: var(--main-padding);
+}
+.blogs .box-container .box{
+  padding: 0;
+  text-align: start;
+}
+.blogs .box-container .box:hover .image img{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.blogs .box-container .box .image{
+  overflow: hidden;
+  height: 15rem;
+  width: 100%;
+}
+.blogs .box-container .box .image img{
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+}
+.blogs .box-container .box .content{
+  padding: 1.5rem .75rem;
+}
+.blogs .box-container .box .content .title{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 1.5rem;
+  display: block;
+  padding-bottom: 1rem;
+}
+.blogs .box-container .box .content .title:hover{
+  color: var(--main-color);
+}
+.blogs .box-container .box .content span{
+  color: var(--main-color);
+  text-transform: capitalize;
+  font-size: 1.3rem;
+}
+.blogs .box-container .box .content p{
+  color: #ccc;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.blogs .box-container .box .content .btn{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  background: var(--main-color);
+  min-width: 300px;
+  outline: 0;
+  border: 0;
+  padding: .75rem 1.5rem;
+  transition: letter-spacing .2s ease-in;
+  -webkit-transition: letter-spacing .2s ease-in;
+  -moz-transition: letter-spacing .2s ease-in;
+  -ms-transition: letter-spacing .2s ease-in;
+  -o-transition: letter-spacing .2s ease-in;
+}
+.blogs .box-container .box .content .btn:hover{
+  letter-spacing: 2px;
+}
+/* End Style Of Blogs */
+/* Start Style Of Footer */
+.footer{
+  padding: var(--main-padding);
+  background-color: var(--black);
+}
+.footer .share{
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+.footer .share a{
+  text-decoration: none;
+  height: 3.3rem;
+  width: 3.3rem;
+  line-height: 3.3rem;
+  color: #fff;
+  font-size: 1.3rem;
+  border: var(--border);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: .2rem;
+  text-align: center;
+}
+.footer .share a:hover{
+  background: var(--main-color);
+}
+.footer .links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+.footer .links a {
+  padding: .7rem 1rem;
+  color: #fff;
+  border: var(--border);
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.footer .links a:hover{
+  background: var(--main-color);
+}
+.footer .credit {
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: lighter;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+}
+.footer .credit span {
+  color: var(--main-color);
+}
+/* End Style Of Footer */
