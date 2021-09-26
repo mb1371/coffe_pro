@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Main File OF Css -->
     <link rel="stylesheet" href="css/coffee.css">
+    <!-- Main File OF Screens -->
+    <link rel="stylesheet" href="css/mediaScreen.css">
     <!-- Normalize file -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/all.min.css">
@@ -22,8 +24,17 @@
                 </a>
                 <!-- End Logo -->
                 <!-- Start Navigation -->
-                <div class="nav">
-                    <ul>
+                <div class="nav" id="nav">
+                    <a class="closebtn" onclick="closeNav()">&times;</a>
+                    <!-- Start Icons -->
+                    <div class="icons">
+                        <a class="fas fa-envelope"></a>
+                        <a class="fas fa-globe"></a>
+                        <a class="fas fa-shopping-cart"></a>
+                        <a class="fas fa-search"></a>
+                    </div>
+                    <!-- End Icons -->
+                    <ul class="overlay-content">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#menu">Menu</a></li>
@@ -34,12 +45,11 @@
                     </ul>
                 </div>
                 <!-- End Navigation -->
-                <!-- Start Icons -->
-                <div class="icons">
-                    <a class="fas fa-search"></a>
-                    <a class="fas fa-shopping-cart"></a>
-                </div>
-                <!-- End Icons -->
+                <!-- Start navigation bars -->
+                <span class="menu" onclick="openNav()">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <!-- End navigation bars -->
         </header>
         <!-- End Header -->
         <!-- Start Section Home -->
@@ -55,7 +65,7 @@
         <!-- End Section Home -->
         <!-- Start Section About -->
         <section class="about" id="about">
-            <h1 class="heading"><span>about</span> us </h1>
+            <h1 class="heading"><span>about </span>us </h1>
             <div class="row">
                 <div class="image">
                     <img src="images/about-img.jpeg" alt="">
@@ -290,9 +300,10 @@
                 <a href="#">contact</a>
                 <a href="#">blogs</a>
             </div>
-            <div class="credit">created by <span>mr. mb1_371</span> | all rights reserved</div>
+            <div class="credit">created by<span> mr. mb1_371 </span> | all rights reserved</div>
         </footer>
         <!-- End Section Of Footer -->
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>

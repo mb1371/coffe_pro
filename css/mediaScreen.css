@@ -1,0 +1,205 @@
+  :root{
+      --title-size: 1.5rem
+  }
+  /* Small */
+@media (max-width: 767px) {
+    /* Start Style of Header */
+    .header{
+        padding: 1rem 7%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+    }
+    .header .menu{
+        display: block;
+    }
+    .header .menu i{
+        color: #fff;
+        font-size: 2rem
+    }
+    .header .logo img{
+        height: 3rem
+    }
+    .header .nav{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 111111;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 2rem 0;
+        display: flex;
+        align-content: flex-end;
+        transition: .5s;
+        display: none;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+    }
+    .header .nav .icons{
+        margin-left: 8%;
+    }
+    .header .nav .icons a{
+        font-size: 2rem
+    }
+    .header .nav .overlay-content{
+        margin-top: 60px;
+    }
+    .header .nav .closebtn{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 3rem;
+    }
+    .header .nav > a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .header .nav ul li{
+        display: block;
+        padding: 15px 20px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .header .nav .icons a{
+        font-size: 1.5rem;
+    }
+    /* End Style of Header */
+    /* Start Stayle of Fremwork */
+    .heading{
+        text-transform: uppercase;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        font-size: var(--title-size);
+        padding-bottom: .1rem;
+    }
+    .heading span{
+        color: var(--main-color);
+        text-transform: uppercase;
+        margin-left: 15px;
+    }
+    /* End Stayle of Fremwork */
+    /* Start Style Of Home */
+    .home .content h3{
+        font-size: 2.5rem;
+    }
+      .home .content p{
+        font-size: 1.1rem;
+    }
+    /* End Style Of Home */
+    /* Start Style Of About */
+    .about{
+        padding: 1rem 7%
+    }
+    .about .row{
+        display: block;
+        background-color: var(--black);
+    }
+    .about .row .image{
+        flex: 0
+    }
+    .about .row .image img{
+        width: 100%;
+        height: 100%
+    }
+    /* End Style Of About */
+    /* Start Style Of Created By */
+    .footer .credit {
+        font-size: 1rem;
+        padding: 0;
+    }
+    /* End Style Of Created By */
+}
+
+
+  /* Medium */
+@media (max-width: 991px) {
+    /* Start Style Of Header */
+    .header .menu{
+        display: block;
+    }
+    .header .menu i{
+        color: #fff;
+        font-size: 2rem
+    }
+    .header .logo img{
+        height: 4rem
+    }
+    .header .nav{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 111111;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 2rem 0;
+        display: flex;
+        align-content: flex-end;
+        transition: .5s;
+        display: none;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+    }
+    .header .nav .icons{
+        margin-left: 5%;
+    }
+    .header .nav .overlay-content{
+        margin-top: 60px;
+    }
+    .header .nav .closebtn{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 3rem;
+    }
+    .header .nav > a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .header .nav ul li{
+        display: block;
+        padding: 15px 20px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .header .nav .icons a{
+        font-size: 2rem;
+    }
+    /* End Style of Header */
+    /* Start Style Of About */
+    .about .row{
+        display: block;
+        background-color: var(--black);
+    }
+    .about .row .image{
+        flex: 0
+    }
+    .about .row .image img{
+        width: 100%;
+        height: 100%
+    }
+    /* End Style Of About */
+}
+
+
+  /* Large */
+@media (min-width: 992px) {
+    /* Start Style Of Navigation */
+    .header .menu{
+        display: none;
+    }
+    .header .nav > a{
+        display: none;
+    }
+    .header .nav .icons{
+        display: none;
+    }
+    /* End Style Of Navigation */
+}
